@@ -182,7 +182,3 @@ python server/database/generate_static_maps.py
   fallback OpenStreetMap di WebView.
 - Proyek ini adalah prototipe pembelajaran, bukan layanan produksi.
 
-## Dokumentasi UTS
-
-Lihat `docs/Wisata-Jogja-Dokumentasi-UTS.docx` dan folder
-`docs/screenshots/` untuk tangkapan layar semua alur utama.
