@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/screen_margin"
+            android:paddingTop="16dp"
+            android:paddingBottom="112dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textGreeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.WisataJogja.Label"
+                        android:textColor="@color/terracotta"
+                        tools:text="SELAMAT PAGI" />
+
+                    <com.example.wisatajogja.ui.common.SerifTextView
+                        android:id="@+id/textUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/playfair_semibold"
+                        android:textColor="@color/green_dark"
+                        android:textSize="27sp"
+                        tools:text="Nafisa." />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textAppearance="@style/TextAppearance.WisataJogja.Caption"
+                        tools:text="Senin, 17 November" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonNotifications"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_circle_cream"
+                    android:contentDescription="@string/cd_notification"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_notifications"
+                    app:tint="@color/green_dark" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:cardBackgroundColor="@color/green_dark"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_weather_gradient"
+                    android:padding="20dp">
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textWeatherLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.1"
+                        android:text="YOGYAKARTA · HARI INI"
+                        android:textColor="@color/gold"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.wisatajogja.ui.common.SerifTextView
+                        android:id="@+id/textTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/playfair_semibold"
+                        android:text="—"
+                        android:textColor="@color/cream_light"
+                        android:textSize="54sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textWeatherLocation"
+                        tools:text="28°" />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textWeatherDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Memuat cuaca…"
+                        android:textColor="@color/cream_light"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/textFeels"
+                        app:layout_constraintStart_toEndOf="@id/textTemperature"
+                        tools:text="Cerah berawan" />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textFeels"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Terasa hangat dan cocok untuk menjelajah."
+                        android:textColor="#B3FBF7EE"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@id/textTemperature"
+                        app:layout_constraintEnd_toStartOf="@id/imageWeather"
+                        app:layout_constraintStart_toEndOf="@id/textTemperature" />
+
+                    <FrameLayout
+                        android:id="@+id/imageWeather"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="@drawable/bg_circle_gold_soft"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iconWeather"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_wb_sunny"
+                            app:tint="@color/gold" />
+                    </FrameLayout>
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textWeatherSource"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Sumber BMKG"
+                        android:textColor="#8CFBF7EE"
+                        android:textSize="9sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textTemperature"
+                        tools:text="BMKG · diperbarui 17.30" />
+
+                    <View
+                        android:id="@+id/weatherDivider"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#33FBF7EE"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textWeatherSource" />
+
+                    <LinearLayout
+                        android:id="@+id/weatherMetrics"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/weatherDivider">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_air"
+                                app:tint="@color/gold_light" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:id="@+id/textWind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="—"
+                                android:textColor="@color/cream_light"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                tools:text="12 km/j" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_wind"
+                                android:textColor="#8CFBF7EE"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_water_drop"
+                                app:tint="@color/gold_light" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:id="@+id/textHumidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="—"
+                                android:textColor="@color/cream_light"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                tools:text="78%" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_humidity"
+                                android:textColor="#8CFBF7EE"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_wb_sunny"
+                                app:tint="@color/gold_light" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:id="@+id/textUv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="—"
+                                android:textColor="@color/cream_light"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                tools:text="4,2" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_uv"
+                                android:textColor="#8CFBF7EE"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_water_drop"
+                                app:tint="@color/gold_light" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="20,9%"
+                                android:textColor="@color/cream_light"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <com.example.wisatajogja.ui.common.SansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_oxygen"
+                                android:textColor="#8CFBF7EE"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.example.wisatajogja.ui.common.SerifTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_explore_title"
+                        android:textAppearance="@style/TextAppearance.WisataJogja.H2" />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/home_explore_subtitle"
+                        android:textAppearance="@style/TextAppearance.WisataJogja.Caption" />
+                </LinearLayout>
+
+                <com.example.wisatajogja.ui.common.SansTextView
+                    android:id="@+id/actionSeeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/common_see_all"
+                    android:textColor="@color/green_dark"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_destination_beranda" />
+
+            <com.example.wisatajogja.ui.common.SerifTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/home_areas_title"
+                android:textAppearance="@style/TextAppearance.WisataJogja.H3" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clipToPadding="false"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupAreas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="4dp"
+                    app:chipSpacingHorizontal="8dp"
+                    app:singleLine="true"
+                    app:singleSelection="false" />
+            </HorizontalScrollView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCommunity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/gold"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp">
+
+                    <FrameLayout
+                        android:id="@+id/cardCommunityIcon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_circle_green"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_group"
+                            app:tint="@color/gold" />
+                    </FrameLayout>
+
+                    <com.example.wisatajogja.ui.common.SerifTextView
+                        android:id="@+id/textCommunityTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:fontFamily="@font/playfair_semibold"
+                        android:text="@string/home_community_title"
+                        android:textColor="@color/green_dark"
+                        android:textSize="19sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cardCommunityIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:id="@+id/textCommunityBody"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/home_community_body"
+                        android:textColor="#B30C2E26"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cardCommunityIcon"
+                        app:layout_constraintTop_toBottomOf="@id/textCommunityTitle" />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="4dp"
+                        android:text="@string/home_community_action"
+                        android:textColor="@color/green_dark"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_arrow_forward"
+                        app:layout_constraintStart_toEndOf="@id/cardCommunityIcon"
+                        app:layout_constraintTop_toBottomOf="@id/textCommunityBody" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.example.wisatajogja.ui.common.SerifTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_recommendation_title"
+                        android:textAppearance="@style/TextAppearance.WisataJogja.H2" />
+
+                    <com.example.wisatajogja.ui.common.SansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/home_recommendation_subtitle"
+                        android:textAppearance="@style/TextAppearance.WisataJogja.Caption" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerRecommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_destination_wide" />
+
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_travel_explore"
+                    app:tint="@color/muted" />
+
+                <com.example.wisatajogja.ui.common.SansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/common_empty"
+                    android:textAppearance="@style/TextAppearance.WisataJogja.Body" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="18dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/green_dark"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

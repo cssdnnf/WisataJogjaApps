@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wisata Jogja</string>
+    <string name="brand_name">WISATAJOGJA</string>
+    <string name="brand_tagline">Cerita dari tanah Jawa</string>
+
+    <!-- Umum -->
+    <string name="common_continue">Lanjutkan</string>
+    <string name="common_save">Simpan</string>
+    <string name="common_cancel">Batal</string>
+    <string name="common_close">Tutup</string>
+    <string name="common_back">Kembali</string>
+    <string name="common_retry">Coba lagi</string>
+    <string name="common_search">Cari</string>
+    <string name="common_loading">Memuat data…</string>
+    <string name="common_empty">Belum ada data.</string>
+    <string name="common_error_network">Tidak dapat terhubung ke server. Periksa koneksi internet Anda.</string>
+    <string name="common_required">Wajib diisi</string>
+    <string name="common_all">Semua</string>
+    <string name="common_see_all">Lihat semua</string>
+    <string name="common_person">orang</string>
+    <string name="common_free">Gratis</string>
+    <string name="common_currency">Rp%1$s</string>
+    <string name="common_per_person">/ orang</string>
+    <string name="common_logout_title">Keluar dari akun?</string>
+    <string name="common_logout_message">Anda dapat masuk kembali kapan saja untuk melanjutkan perjalanan.</string>
+    <string name="common_logout">Keluar</string>
+
+    <!-- Masuk -->
+    <string name="login_welcome">Selamat datang\nkembali.</string>
+    <string name="login_subtitle">Masuk untuk menyimpan destinasi dan merencanakan perjalananmu di Jogja.</string>
+    <string name="login_email">Alamat email</string>
+    <string name="login_password">Kata sandi</string>
+    <string name="login_forgot">Lupa sandi?</string>
+    <string name="login_action">Masuk</string>
+    <string name="login_or">atau</string>
+    <string name="login_guest">Jelajahi sebagai tamu</string>
+    <string name="login_no_account">Belum punya akun?</string>
+    <string name="login_register">Daftar sekarang</string>
+    <string name="login_weather_loading">Memuat cuaca…</string>
+    <string name="login_session_expired">Sesi berakhir. Silakan masuk kembali.</string>
+
+    <!-- Daftar -->
+    <string name="register_title">Mulai ceritamu\ndi Jogja.</string>
+    <string name="register_subtitle">Satu akun untuk destinasi, rencana kunjungan, dan cerita perjalananmu.</string>
+    <string name="register_name">Nama lengkap</string>
+    <string name="register_email">Alamat email</string>
+    <string name="register_password">Kata sandi</string>
+    <string name="register_password_hint">Minimal 6 karakter</string>
+    <string name="register_confirm">Ulangi kata sandi</string>
+    <string name="register_terms">Saya menyetujui syarat layanan dan kebijakan privasi Wisata Jogja.</string>
+    <string name="register_action">Buat akun</string>
+    <string name="register_have_account">Sudah punya akun?</string>
+    <string name="register_login">Masuk di sini</string>
+    <string name="register_password_mismatch">Kata sandi belum sama.</string>
+    <string name="register_terms_required">Setujui syarat layanan untuk melanjutkan.</string>
+    <string name="register_success">Akun berhasil dibuat. Selamat menjelajah!</string>
+
+    <!-- Lupa sandi -->
+    <string name="forgot_title">Lupa kata\nsandi?</string>
+    <string name="forgot_subtitle">Masukkan email terdaftar. Kami akan membuat kode pemulihan enam digit untukmu.</string>
+    <string name="forgot_email">Alamat email</string>
+    <string name="forgot_action">Buat kode pemulihan</string>
+    <string name="forgot_demo_hint">Mode prototipe: kode ditampilkan langsung di aplikasi karena email belum terhubung ke layanan pengiriman.</string>
+    <string name="forgot_success">Kode pemulihan dibuat.</string>
+    <string name="forgot_code_title">Kode pemulihan</string>
+    <string name="forgot_code_message">Masukkan kode %1$s pada halaman berikutnya. Kode berlaku 15 menit.</string>
+    <string name="forgot_continue">Lanjut atur sandi</string>
+    <string name="forgot_remembered">Ingat kata sandi?</string>
+
+    <!-- Atur ulang sandi -->
+    <string name="reset_title">Sandi baru.</string>
+    <string name="reset_subtitle">Buat kata sandi baru yang mudah kamu ingat, minimal 6 karakter.</string>
+    <string name="reset_code">Kode pemulihan</string>
+    <string name="reset_password">Kata sandi baru</string>
+    <string name="reset_confirm">Ulangi kata sandi baru</string>
+    <string name="reset_action">Perbarui kata sandi</string>
+    <string name="reset_success">Kata sandi berhasil diperbarui. Silakan masuk.</string>
+
+    <!-- Navigasi -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_explore">Rekomendasi</string>
+    <string name="nav_saved">Tersimpan</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_summary">Ringkasan</string>
+    <string name="nav_destinations">Wisata</string>
+    <string name="nav_users">Pengguna</string>
+    <string name="nav_account">Akun</string>
+    <string name="nav_cd_home">Buka beranda</string>
+    <string name="nav_cd_explore">Buka rekomendasi</string>
+    <string name="nav_cd_saved">Buka lokasi tersimpan</string>
+    <string name="nav_cd_profile">Buka profil</string>
+    <string name="nav_cd_summary">Buka ringkasan admin</string>
+    <string name="nav_cd_destinations">Buka kelola wisata</string>
+    <string name="nav_cd_users">Buka pengguna</string>
+    <string name="nav_cd_account">Buka akun admin</string>
+
+    <!-- Beranda -->
+    <string name="home_greeting_morning">Selamat pagi,</string>
+    <string name="home_greeting_afternoon">Selamat siang,</string>
+    <string name="home_greeting_evening">Selamat sore,</string>
+    <string name="home_greeting_night">Selamat malam,</string>
+    <string name="home_guest_name">Tamu</string>
+    <string name="home_location">Yogyakarta, Indonesia</string>
+    <string name="home_weather_source">Sumber %1$s · diperbarui %2$s</string>
+    <string name="home_weather_feels">Terasa hangat dan cocok untuk menjelajah.</string>
+    <string name="home_wind">Angin</string>
+    <string name="home_oxygen">Oksigen</string>
+    <string name="home_humidity">Lembap</string>
+    <string name="home_uv">Indeks UV</string>
+    <string name="home_explore_title">Jelajahi Jogja</string>
+    <string name="home_explore_subtitle">Tempat yang paling dicari minggu ini</string>
+    <string name="home_areas_title">Pilih area</string>
+    <string name="home_areas_subtitle">Mulai dari wilayah yang ingin kamu jelajahi</string>
+    <string name="home_recommendation_title">Rekomendasi untukmu</string>
+    <string name="home_recommendation_subtitle">Dipilih dari cerita dan rating pengunjung</string>
+    <string name="home_community_title">Bertemu warga lokal</string>
+    <string name="home_community_body">Pemandu, komunitas jeep, dan pelaku UMKM siap membuat perjalananmu lebih bermakna.</string>
+    <string name="home_community_action">Kenali komunitas</string>
+    <string name="home_notifications">Notifikasi</string>
+    <string name="home_weather_unavailable">Cuaca belum tersedia</string>
+    <string name="home_weather_error">Gagal memuat cuaca. Tarik untuk memperbarui.</string>
+
+    <!-- Rekomendasi -->
+    <string name="explore_title">Temukan\nJogja.</string>
+    <string name="explore_subtitle">%1$d destinasi terkurasi untuk perjalananmu</string>
+    <string name="explore_search_hint">Cari pantai, candi, atau area…</string>
+    <string name="explore_filter_all">Semua</string>
+    <string name="explore_filter_beach">Pantai</string>
+    <string name="explore_filter_culture">Budaya</string>
+    <string name="explore_filter_nature">Alam</string>
+    <string name="explore_empty_title">Belum ada destinasi</string>
+    <string name="explore_empty_body">Coba kata kunci lain atau ubah kategori.</string>
+
+    <!-- Tersimpan -->
+    <string name="saved_title">Lokasi\ntersimpan.</string>
+    <string name="saved_subtitle">Tempat yang ingin kamu kunjungi nanti, tersimpan rapi di satu tempat.</string>
+    <string name="saved_empty_title">Belum ada yang tersimpan</string>
+    <string name="saved_empty_body">Ketuk ikon hati pada destinasi untuk menyimpannya di sini.</string>
+    <string name="saved_explore_action">Jelajahi destinasi</string>
+    <string name="saved_guest_title">Masuk untuk menyimpan</string>
+    <string name="saved_guest_body">Buat akun atau masuk agar daftar lokasi tersimpanmu tersinkron.</string>
+    <string name="saved_login_action">Masuk atau daftar</string>
+    <string name="saved_removed">Dihapus dari lokasi tersimpan.</string>
+
+    <!-- Profil -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_edit">Edit profil</string>
+    <string name="profile_trips">Dikunjungi</string>
+    <string name="profile_saved">Tersimpan</string>
+    <string name="profile_reviews">Ulasan</string>
+    <string name="profile_menu_account">Akun</string>
+    <string name="profile_change_photo">Ganti foto profil</string>
+    <string name="profile_edit_profile">Edit profil</string>
+    <string name="profile_change_password">Ubah kata sandi</string>
+    <string name="profile_reservations">Reservasi saya</string>
+    <string name="profile_notifications">Notifikasi perjalanan</string>
+    <string name="profile_help">Bantuan dan masukan</string>
+    <string name="profile_privacy">Kebijakan privasi</string>
+    <string name="profile_admin_panel">Panel admin</string>
+    <string name="profile_logout">Keluar</string>
+    <string name="profile_guest_name">Tamu Jogja</string>
+    <string name="profile_guest_email">Masuk untuk menyimpan perjalananmu</string>
+    <string name="profile_guest_action">Masuk atau daftar</string>
+    <string name="profile_version">Wisata Jogja v1.0 · dibuat untuk UTS Pemrograman Mobile</string>
+    <string name="profile_reservations_empty">Belum ada reservasi.</string>
+    <string name="profile_notifications_on">Notifikasi perjalanan diaktifkan.</string>
+    <string name="profile_notifications_off">Notifikasi perjalanan dimatikan.</string>
+    <string name="profile_help_message">Butuh bantuan? Tulis ke halo@wisatajogja.id atau hubungi pengelola destinasi melalui detail wisata.</string>
+    <string name="profile_privacy_message">Kami hanya menyimpan data akun dan preferensi perjalanan untuk kebutuhan prototipe pembelajaran. Kata sandi disimpan dalam bentuk hash di server dan tidak pernah ditampilkan di aplikasi.</string>
+    <string name="profile_photo_options">Foto profil</string>
+    <string name="profile_photo_camera">Ambil dari kamera</string>
+    <string name="profile_photo_gallery">Pilih dari galeri</string>
+    <string name="profile_photo_file">Pilih dari file manager</string>
+    <string name="crop_label">EDIT GAMBAR</string>
+    <string name="crop_title_profile">Atur foto profil</string>
+    <string name="crop_title_destination">Atur gambar destinasi</string>
+    <string name="crop_subtitle_profile">Geser foto untuk mengatur posisi. Cubit atau gunakan tombol zoom untuk memperbesar.</string>
+    <string name="crop_subtitle_destination">Area 16:9 ini akan dipakai sebagai gambar utama destinasi. Geser dan zoom untuk mengatur posisi.</string>
+    <string name="crop_zoom_out">Perkecil</string>
+    <string name="crop_zoom_in">Perbesar</string>
+    <string name="crop_cancel">Batal</string>
+    <string name="crop_apply">Gunakan gambar</string>
+    <string name="crop_processing">Memproses gambar…</string>
+    <string name="crop_failed">Gambar tidak dapat dibuka. Pilih gambar lain.</string>
+    <string name="profile_photo_remove">Hapus foto</string>
+    <string name="profile_photo_permission">Izin kamera diperlukan untuk mengambil foto.</string>
+    <string name="profile_photo_failed">Foto gagal diproses.</string>
+    <string name="profile_photo_uploading">Mengunggah foto…</string>
+    <string name="profile_photo_success">Foto profil diperbarui.</string>
+    <string name="profile_login_required">Masuk untuk mengakses profil.</string>
+
+    <!-- Detail -->
+    <string name="detail_about">Tentang destinasi</string>
+    <string name="detail_gallery">Galeri</string>
+    <string name="detail_services">Layanan &amp; komunitas</string>
+    <string name="detail_location">Lokasi</string>
+    <string name="detail_open_maps">Buka di Google Maps</string>
+    <string name="detail_reviews">Ulasan pengunjung</string>
+    <string name="detail_reserve">Reservasi sekarang</string>
+    <string name="detail_ticket">Tiket mulai</string>
+    <string name="detail_open_hours">Jam buka</string>
+    <string name="detail_reviews_count">%1$d ulasan</string>
+    <string name="detail_favorite_on">Disimpan</string>
+    <string name="detail_favorite_off">Simpan</string>
+    <string name="detail_share">Bagikan destinasi</string>
+    <string name="detail_share_text">Yuk jelajahi %1$s di Jogja bersama Wisata Jogja.</string>
+    <string name="detail_community_type">Komunitas lokal</string>
+    <string name="detail_service_type">Layanan</string>
+    <string name="detail_no_reviews">Belum ada ulasan.</string>
+    <string name="review_write">Tulis ulasan</string>
+    <string name="review_edit">Ubah ulasan</string>
+    <string name="review_label">ULASAN PENGUNJUNG</string>
+    <string name="review_form_title">Bagikan ceritamu.</string>
+    <string name="review_form_subtitle">Ceritakan pengalamanmu mengunjungi destinasi ini. Ulasanmu membantu wisatawan lain.</string>
+    <string name="review_destination_label">DESTINASI</string>
+    <string name="review_rating_label">RATING KAMU</string>
+    <string name="review_rating_1">Kurang memuaskan</string>
+    <string name="review_rating_2">Cukup</string>
+    <string name="review_rating_3">Baik</string>
+    <string name="review_rating_4">Sangat baik</string>
+    <string name="review_rating_5">Luar biasa</string>
+    <string name="review_comment_label">Ulasanmu</string>
+    <string name="review_comment_hint">Ceritakan suasana, pelayanan, atau tips untuk pengunjung lain…</string>
+    <string name="review_tips">Ulasan yang jujur dan spesifik membantu wisatawan lain memilih perjalanan yang tepat.</string>
+    <string name="review_submit">Kirim ulasan</string>
+    <string name="review_sending">Mengirim ulasan…</string>
+    <string name="review_success">Terima kasih, ulasanmu tersimpan.</string>
+    <string name="review_comment_short">Tulis ulasan minimal 5 karakter.</string>
+    <string name="review_rating_required">Pilih rating terlebih dahulu.</string>
+    <string name="detail_load_failed">Destinasi gagal dimuat.</string>
+
+    <!-- Reservasi -->
+    <string name="reservation_title">Rencanakan\nkunjungan.</string>
+    <string name="reservation_subtitle">Isi detail kunjungan. Kode booking akan dibuat setelah reservasi dikirim.</string>
+    <string name="reservation_destination">Destinasi</string>
+    <string name="reservation_date">Tanggal kunjungan</string>
+    <string name="reservation_date_hint">Pilih tanggal</string>
+    <string name="reservation_people">Jumlah orang</string>
+    <string name="reservation_notes">Catatan untuk pengelola</string>
+    <string name="reservation_notes_hint">Contoh: datang pagi, butuh pemandu lokal…</string>
+    <string name="reservation_summary">Ringkasan biaya</string>
+    <string name="reservation_ticket_price">Tiket × %1$d orang</string>
+    <string name="reservation_total">Total</string>
+    <string name="reservation_action">Kirim reservasi</string>
+    <string name="reservation_success_title">Reservasi terkirim!</string>
+    <string name="reservation_success_message">Kode booking %1$s. Tunjukkan kode ini saat tiba di lokasi. Status awal: menunggu konfirmasi pengelola.</string>
+    <string name="reservation_success_done">Selesai</string>
+    <string name="reservation_login_required">Masuk untuk membuat reservasi.</string>
+    <string name="reservation_date_required">Pilih tanggal kunjungan.</string>
+    <string name="reservation_history">Reservasi saya</string>
+    <string name="reservation_history_label">PERJALANAN</string>
+    <string name="reservation_history_title">Reservasi saya.</string>
+    <string name="reservation_history_subtitle">Semua rencana dan catatan kunjunganmu tersimpan di sini.</string>
+    <string name="reservation_history_empty_title">Belum ada reservasi</string>
+    <string name="reservation_history_empty_body">Jelajahi destinasi lalu buat reservasi pertamamu. Kode booking akan muncul di halaman ini.</string>
+    <string name="reservation_history_count">%1$d reservasi tersimpan</string>
+    <string name="reservation_history_upcoming">%1$d menunggu kunjungan</string>
+    <string name="reservation_status_waiting">Menunggu</string>
+    <string name="reservation_status_confirmed">Dikonfirmasi</string>
+    <string name="reservation_status_done">Selesai</string>
+    <string name="reservation_status_cancelled">Dibatalkan</string>
+    <string name="reservation_code">Kode booking</string>
+    <string name="reservation_people_value">%1$d orang</string>
+    <string name="reservation_notes_label">Catatan</string>
+    <string name="reservation_history_action">Kembali menjelajah</string>
+
+    <!-- Edit profil -->
+    <string name="edit_profile_title">Edit profil</string>
+    <string name="edit_profile_subtitle">Perbarui data yang tampil di akunmu.</string>
+    <string name="edit_profile_name">Nama lengkap</string>
+    <string name="edit_profile_username">Username</string>
+    <string name="edit_profile_email">Email</string>
+    <string name="edit_profile_phone">Nomor telepon</string>
+    <string name="edit_profile_city">Domisili</string>
+    <string name="edit_profile_bio">Bio singkat</string>
+    <string name="edit_profile_save">Simpan perubahan</string>
+    <string name="edit_profile_success">Profil berhasil diperbarui.</string>
+    <string name="edit_profile_photo_hint">Ketuk foto untuk mengganti</string>
+
+    <!-- Ubah sandi -->
+    <string name="password_title">Ubah kata sandi</string>
+    <string name="password_subtitle">Gunakan kata sandi yang kuat dan tidak dipakai di layanan lain.</string>
+    <string name="password_current">Kata sandi saat ini</string>
+    <string name="password_new">Kata sandi baru</string>
+    <string name="password_confirm">Ulangi kata sandi baru</string>
+    <string name="password_action">Simpan kata sandi</string>
+    <string name="password_success">Kata sandi berhasil diubah.</string>
+
+    <!-- Admin ringkasan -->
+    <string name="admin_greeting">Halo, %1$s</string>
+    <string name="admin_summary_title">Ringkasan hari ini</string>
+    <string name="admin_visits_30">Kunjungan 30 hari</string>
+    <string name="admin_users_total">Total pengguna</string>
+    <string name="admin_destinations_published">Destinasi terbit</string>
+    <string name="admin_saved_total">Lokasi tersimpan</string>
+    <string name="admin_vs_previous">%1$s dibanding 30 hari sebelumnya</string>
+    <string name="admin_chart_title">Tren kunjungan</string>
+    <string name="admin_chart_subtitle">14 hari terakhir</string>
+    <string name="admin_popular_title">Destinasi populer</string>
+    <string name="admin_popular_subtitle">Berdasarkan jumlah lokasi tersimpan</string>
+    <string name="admin_recent_users_title">Pengguna terbaru</string>
+    <string name="admin_recent_reservations_title">Reservasi terbaru</string>
+    <string name="admin_view_all">Kelola</string>
+    <string name="admin_pending_confirmation">Menunggu konfirmasi</string>
+
+    <!-- Admin kelola wisata -->
+    <string name="manage_title">Kelola\nwisata.</string>
+    <string name="manage_subtitle">%1$d destinasi · %2$d terbit · %3$d draf</string>
+    <string name="manage_search_hint">Cari destinasi…</string>
+    <string name="manage_add">Tambah destinasi</string>
+    <string name="manage_empty_title">Belum ada destinasi</string>
+    <string name="manage_empty_body">Tambahkan destinasi pertama untuk mulai mengelola katalog wisata.</string>
+    <string name="manage_delete_title">Hapus destinasi?</string>
+    <string name="manage_delete_message">%1$s akan dihapus dari katalog beserta galeri dan datanya. Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="manage_delete_action">Hapus</string>
+    <string name="manage_deleted">Destinasi dihapus.</string>
+    <string name="manage_saved_count">%1$d tersimpan</string>
+    <string name="status_published">Terbit</string>
+    <string name="status_draft">Draf</string>
+
+    <!-- Admin pengguna -->
+    <string name="users_title">Pengguna.</string>
+    <string name="users_subtitle">%1$s akun terdaftar</string>
+    <string name="users_search_hint">Cari nama atau email…</string>
+    <string name="users_filter_all">Semua</string>
+    <string name="users_filter_active">Aktif</string>
+    <string name="users_filter_inactive">Nonaktif</string>
+    <string name="users_active">Aktif</string>
+    <string name="users_inactive">Nonaktif</string>
+    <string name="users_admin">Admin</string>
+    <string name="users_member">Wisatawan</string>
+    <string name="users_deactivate">Nonaktifkan</string>
+    <string name="users_activate">Aktifkan</string>
+    <string name="users_status_changed">Status pengguna diperbarui.</string>
+    <string name="users_empty_title">Pengguna tidak ditemukan</string>
+    <string name="users_empty_body">Coba kata kunci atau filter lain.</string>
+    <string name="cd_user_actions">Aksi pengguna</string>
+
+    <!-- Admin akun -->
+    <string name="admin_account_title">Akun admin.</string>
+    <string name="admin_account_subtitle">Kelola akses dan preferensi pengelola.</string>
+    <string name="admin_account_role">Administrator</string>
+    <string name="admin_account_view_app">Buka tampilan wisatawan</string>
+    <string name="admin_account_edit">Edit profil admin</string>
+    <string name="admin_account_password">Ubah kata sandi</string>
+    <string name="admin_account_help">Bantuan pengelola</string>
+    <string name="admin_account_logout">Keluar dari admin</string>
+
+    <!-- Form wisata -->
+    <string name="form_add_title">Destinasi baru</string>
+    <string name="form_edit_title">Edit destinasi</string>
+    <string name="form_name">Nama destinasi</string>
+    <string name="form_category">Kategori</string>
+    <string name="form_area">Area</string>
+    <string name="form_short_description">Deskripsi singkat</string>
+    <string name="form_description">Deskripsi lengkap</string>
+    <string name="form_ticket">Harga tiket (Rp)</string>
+    <string name="form_hours">Jam buka</string>
+    <string name="form_latitude">Latitude</string>
+    <string name="form_longitude">Longitude</string>
+    <string name="form_image">Gambar utama</string>
+    <string name="form_image_hint">Pilih gambar dari galeri</string>
+    <string name="form_publish">Terbitkan destinasi</string>
+    <string name="form_featured">Tandai sebagai unggulan</string>
+    <string name="form_save">Simpan destinasi</string>
+    <string name="form_success">Destinasi berhasil disimpan.</string>
+    <string name="form_image_required">Gambar utama wajib dipilih.</string>
+    <string name="form_uploading">Mengunggah gambar…</string>
+
+    <!-- Cuaca -->
+    <string name="weather_clear">Cerah</string>
+    <string name="weather_cloudy">Berawan</string>
+    <string name="weather_rain">Hujan</string>
+    <string name="weather_source_bmkg">BMKG</string>
+    <string name="weather_source_open_meteo">Open-Meteo</string>
+
+    <!-- Aksesibilitas -->
+    <string name="cd_back">Kembali</string>
+    <string name="cd_favorite">Simpan destinasi</string>
+    <string name="cd_unfavorite">Hapus dari tersimpan</string>
+    <string name="cd_notification">Notifikasi</string>
+    <string name="cd_next">Berikutnya</string>
+    <string name="cd_map">Peta lokasi destinasi</string>
+    <string name="cd_destination_image">Foto destinasi</string>
+    <string name="cd_profile_photo">Foto profil</string>
+    <string name="cd_add_photo">Ganti foto profil</string>
+    <string name="cd_edit">Edit</string>
+    <string name="cd_password_visible">Tampilkan kata sandi</string>
+    <string name="cd_password_hidden">Sembunyikan kata sandi</string>
+
+    <!-- Format / pesan validasi -->
+    <string name="error_email_invalid">Format email belum benar.</string>
+    <string name="error_password_short">Kata sandi minimal 6 karakter.</string>
+    <string name="error_name_short">Nama minimal 3 karakter.</string>
+    <string name="error_required_fields">Lengkapi semua kolom yang wajib diisi.</string>
+    <string name="error_generic">Terjadi kesalahan. Silakan coba lagi.</string>
+</resources>

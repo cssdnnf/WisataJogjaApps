@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin">22dp</dimen>
+    <dimen name="screen_margin_small">16dp</dimen>
+    <dimen name="radius_small">12dp</dimen>
+    <dimen name="radius_medium">18dp</dimen>
+    <dimen name="radius_large">26dp</dimen>
+    <dimen name="radius_xlarge">32dp</dimen>
+    <dimen name="bottom_nav_height">68dp</dimen>
+    <dimen name="bottom_bar_clearance">104dp</dimen>
+</resources>

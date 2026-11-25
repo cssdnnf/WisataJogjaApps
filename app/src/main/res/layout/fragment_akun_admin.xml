@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="112dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_admin_header"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/screen_margin"
+            android:paddingTop="18dp"
+            android:paddingBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_tugu" />
+
+                <com.example.wisatajogja.ui.common.SansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="PANEL ADMIN"
+                    android:textAppearance="@style/TextAppearance.WisataJogja.Brand"
+                    android:textSize="10sp" />
+
+                <com.example.wisatajogja.ui.common.SansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_tag_green"
+                    android:paddingHorizontal="11dp"
+                    android:paddingVertical="6dp"
+                    android:text="AKUN"
+                    android:textColor="@color/gold_light"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/cardAvatar"
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_circle_gold"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageAvatar"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/cd_profile_photo"
+                    android:scaleType="centerCrop" />
+
+                <com.example.wisatajogja.ui.common.SansTextView
+                    android:id="@+id/textAvatarInitial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:text="B" />
+            </FrameLayout>
+
+            <com.example.wisatajogja.ui.common.SerifTextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/playfair_semibold"
+                android:textColor="@color/cream_light"
+                android:textSize="24sp"
+                tools:text="Bagas Prasetya" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/textEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#B3FBF7EE"
+                android:textSize="11sp"
+                tools:text="admin@gmail.com" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tag_gold"
+                android:paddingHorizontal="11dp"
+                android:paddingVertical="4dp"
+                android:text="@string/admin_account_role"
+                android:textColor="@color/green_dark"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/screen_margin"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical">
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AKSES PENGELOLA"
+                android:textAppearance="@style/TextAppearance.WisataJogja.Label" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/cream_light"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/line"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/rowOpenTraveler"
+                        style="@style/Widget.WisataJogja.MenuRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/bg_circle_cream">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_explore"
+                                app:tint="@color/green_dark" />
+                        </FrameLayout>
+
+                        <com.example.wisatajogja.ui.common.SansTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:text="@string/admin_account_view_app"
+                            android:textColor="@color/ink"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="@color/muted" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rowEditProfile"
+                        style="@style/Widget.WisataJogja.MenuRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/bg_circle_cream">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_person"
+                                app:tint="@color/green_dark" />
+                        </FrameLayout>
+
+                        <com.example.wisatajogja.ui.common.SansTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:text="@string/admin_account_edit"
+                            android:textColor="@color/ink"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="@color/muted" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rowChangePassword"
+                        style="@style/Widget.WisataJogja.MenuRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/bg_circle_cream">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_lock"
+                                app:tint="@color/green_dark" />
+                        </FrameLayout>
+
+                        <com.example.wisatajogja.ui.common.SansTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:text="@string/admin_account_password"
+                            android:textColor="@color/ink"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="@color/muted" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rowHelp"
+                        style="@style/Widget.WisataJogja.MenuRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/bg_circle_cream">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_help"
+                                app:tint="@color/green_dark" />
+                        </FrameLayout>
+
+                        <com.example.wisatajogja.ui.common.SansTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:text="@string/admin_account_help"
+                            android:textColor="@color/ink"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="@color/muted" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonLogout"
+                style="@style/Widget.WisataJogja.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/admin_account_logout"
+                android:textColor="@color/terracotta"
+                app:icon="@drawable/ic_logout"
+                app:iconTint="@color/terracotta"
+                app:strokeColor="@color/line" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="@string/profile_version"
+                android:textAppearance="@style/TextAppearance.WisataJogja.Caption"
+                android:textColor="@color/muted_light" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream">#F4EFE3</color>
+    <color name="cream_light">#FBF7EE</color>
+    <color name="cream_deep">#EDE5D3</color>
+    <color name="green_dark">#0C2E26</color>
+    <color name="green">#153E32</color>
+    <color name="green_soft">#DDE6DA</color>
+    <color name="gold">#EBC57C</color>
+    <color name="gold_light">#F6E5BD</color>
+    <color name="terracotta">#B95C36</color>
+    <color name="ink">#17241E</color>
+    <color name="muted">#746F63</color>
+    <color name="muted_light">#A29B8C</color>
+    <color name="line">#E2D9C7</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#66000000</color>
+    <color name="gold_scrim">#330C2E26</color>
+    <color name="success">#2E6B4F</color>
+    <color name="danger">#A6402B</color>
+    <color name="chart_bar">#153E32</color>
+</resources>

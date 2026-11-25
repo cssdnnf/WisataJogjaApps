@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomNavCard"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginHorizontal="18dp"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/cream_light"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="10dp"
+    app:strokeColor="@color/line"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:id="@+id/navItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:id="@+id/navItemSummary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.55"
+            android:background="@drawable/bg_nav_active_gold"
+            android:clickable="true"
+            android:contentDescription="@string/nav_cd_summary"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navIconSummary"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_dashboard"
+                app:tint="@color/cream_light" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/navLabelSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1"
+                android:text="@string/nav_summary"
+                android:textColor="@color/cream_light"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navItemDestinations"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_nav_transparent"
+            android:clickable="true"
+            android:contentDescription="@string/nav_cd_destinations"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navIconDestinations"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_travel_explore"
+                app:tint="@color/muted" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/navLabelDestinations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1"
+                android:text="@string/nav_destinations"
+                android:textColor="@color/muted"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navItemUsers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_nav_transparent"
+            android:clickable="true"
+            android:contentDescription="@string/nav_cd_users"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navIconUsers"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_group"
+                app:tint="@color/muted" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/navLabelUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1"
+                android:text="@string/nav_users"
+                android:textColor="@color/muted"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navItemAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_nav_transparent"
+            android:clickable="true"
+            android:contentDescription="@string/nav_cd_account"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navIconAccount"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_account_circle"
+                app:tint="@color/muted" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/navLabelAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1"
+                android:text="@string/nav_account"
+                android:textColor="@color/muted"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

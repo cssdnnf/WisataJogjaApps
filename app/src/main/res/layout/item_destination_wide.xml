@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/cream_light"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/line"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageDestination"
+            android:layout_width="106dp"
+            android:layout_height="86dp"
+            android:contentDescription="@string/cd_destination_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.WisataJogja.Rounded16" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textAppearance="@style/TextAppearance.WisataJogja.Label"
+            android:textColor="@color/terracotta"
+            app:layout_constraintStart_toEndOf="@id/imageDestination"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.wisatajogja.ui.common.SerifTextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/playfair_semibold"
+            android:maxLines="1"
+            android:textColor="@color/green_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/buttonFavorite"
+            app:layout_constraintStart_toEndOf="@id/imageDestination"
+            app:layout_constraintTop_toBottomOf="@id/textCategory" />
+
+        <ImageView
+            android:id="@+id/iconLocation"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_place"
+            app:layout_constraintStart_toEndOf="@id/imageDestination"
+            app:layout_constraintTop_toBottomOf="@id/textTitle"
+            app:tint="@color/muted" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/muted"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/iconLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconLocation"
+            app:layout_constraintTop_toTopOf="@id/iconLocation" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/green_dark"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageDestination" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/muted"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/textPrice"
+            app:layout_constraintStart_toEndOf="@id/textPrice" />
+
+        <ImageButton
+            android:id="@+id/buttonFavorite"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_circle_cream"
+            android:contentDescription="@string/cd_favorite"
+            android:padding="9dp"
+            android:src="@drawable/ic_favorite_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/green_dark" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,45 @@
+# ── Android / Gradle ──────────────────────────────────────────────
+*.iml
+.gradle/
+.kotlin/
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.hprof
+*.log
+
+# ── OS / editor ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Kredensial & signing — JANGAN di-commit ───────────────────────
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+signing.properties
+
+# Konfigurasi server berisi password database.
+# .config.example.php tetap di-commit sebagai template.
+server/wisatajogja/api/.config.php
+**/.config.php
+
+# ── Data runtime server ───────────────────────────────────────────
+server/wisatajogja/assets/uploads/**
+!server/wisatajogja/assets/uploads/.gitkeep
+
+# ── Scratch / hasil verifikasi lokal ──────────────────────────────
+/work/
+
+# Catatan: dist/*.apk sengaja tidak diabaikan karena merupakan
+# artefak siap-pasang. Tambahkan "dist/*.apk" di sini bila tidak
+# ingin mengunggah APK ke GitHub.

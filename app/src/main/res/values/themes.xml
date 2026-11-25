@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.WisataJogja" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/cream_light</item>
+        <item name="colorPrimaryContainer">@color/green_soft</item>
+        <item name="colorOnPrimaryContainer">@color/green_dark</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorOnSecondary">@color/green_dark</item>
+        <item name="colorSecondaryContainer">@color/gold_light</item>
+        <item name="colorOnSecondaryContainer">@color/green_dark</item>
+        <item name="colorTertiary">@color/terracotta</item>
+        <item name="colorSurface">@color/cream_light</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurfaceContainerLowest">@color/cream_light</item>
+        <item name="colorSurfaceContainerLow">@color/cream_light</item>
+        <item name="colorSurfaceContainer">@color/cream_deep</item>
+        <item name="colorSurfaceContainerHigh">@color/cream_deep</item>
+        <item name="colorSurfaceContainerHighest">@color/cream_deep</item>
+        <item name="colorSurfaceDim">@color/cream</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="colorSurfaceBright">@color/cream_light</item>
+        <item name="colorSurfaceVariant">@color/cream_deep</item>
+        <item name="colorOnSurfaceVariant">@color/muted</item>
+        <item name="colorOutline">@color/line</item>
+        <item name="colorError">@color/danger</item>
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:textColorSecondary">@color/muted</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.WisataJogja.Dialog</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.WisataJogja.Calendar</item>
+    </style>
+
+    <style name="Theme.WisataJogja" parent="Base.Theme.WisataJogja" />
+
+    <style name="ThemeOverlay.WisataJogja.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurface">@color/cream_light</item>
+        <item name="colorSurfaceContainerHigh">@color/cream_light</item>
+        <item name="colorSurfaceContainer">@color/cream_light</item>
+        <item name="android:colorBackground">@color/cream_light</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.WisataJogja.Dialog</item>
+    </style>
+
+    <style name="ShapeAppearance.WisataJogja.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="ThemeOverlay.WisataJogja.Calendar" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/cream_light</item>
+        <item name="colorSurface">@color/cream_light</item>
+    </style>
+</resources>

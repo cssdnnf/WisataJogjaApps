@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/cream_light"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/line"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardImage"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            app:cardBackgroundColor="@color/cream_deep"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageDestination"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/cd_destination_image"
+                android:scaleType="centerCrop" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:letterSpacing="0.06"
+            android:textColor="@color/terracotta"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/textStatus"
+            app:layout_constraintStart_toEndOf="@id/cardImage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="WJ-261117-6D05" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_status_terbit"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/green_dark"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dikonfirmasi" />
+
+        <com.example.wisatajogja.ui.common.SerifTextView
+            android:id="@+id/textDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/green_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImage"
+            app:layout_constraintTop_toBottomOf="@id/textCode"
+            tools:text="Pantai Timang" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/muted"
+            android:textSize="10sp"
+            app:drawableStartCompat="@drawable/ic_place"
+            app:drawableTint="@color/muted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImage"
+            app:layout_constraintTop_toBottomOf="@id/textDestination"
+            tools:text="Gunungkidul" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardImage" />
+
+        <LinearLayout
+            android:id="@+id/infoRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/textDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:textColor="@color/ink"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_calendar_today"
+                app:drawableTint="@color/green_dark"
+                tools:text="20 November 2026" />
+
+            <com.example.wisatajogja.ui.common.SansTextView
+                android:id="@+id/textPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:textColor="@color/muted"
+                android:textSize="10sp"
+                app:drawableStartCompat="@drawable/ic_person"
+                app:drawableTint="@color/muted"
+                tools:text="2 orang" />
+        </LinearLayout>
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textTotalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/reservation_total"
+            android:textAppearance="@style/TextAppearance.WisataJogja.Caption"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/infoRow" />
+
+        <com.example.wisatajogja.ui.common.SerifTextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/green_dark"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@id/textTotalLabel"
+            app:layout_constraintStart_toEndOf="@id/textTotalLabel"
+            app:layout_constraintTop_toTopOf="@id/textTotalLabel"
+            tools:text="Rp60.000" />
+
+        <com.example.wisatajogja.ui.common.SansTextView
+            android:id="@+id/textNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_field_area"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.WisataJogja.Caption"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTotalLabel"
+            tools:text="Datang pagi, bawa jaket." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
